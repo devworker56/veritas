@@ -6,11 +6,8 @@
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand fw-bold text-primary" href="index.php">
-            <span class="icon-container">
-            <i class="fas fa-shield shield-icon"></i>
-            <i class="fas fa-hand-holding-heart heart-icon"></i>
-            </span>
-            AidVeritas
+                <i class="fas fa-shield-alt me-2"></i>
+                AidVeritas
             </a>
 
             <!-- Mobile Toggle -->

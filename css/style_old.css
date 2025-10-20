@@ -27,53 +27,6 @@ body {
     background-color: #ffffff;
 }
 
-/* Icon container styles for heart and hand inside shield */
-.icon-container {
-    display: inline-block;
-    position: relative;
-    width: 1.5em;
-    height: 1.5em;
-    margin-right: 8px;
-}
-
-.shield-icon {
-    position: absolute;
-    font-size: 1.5em;
-    color: #c0c0c0; /* Silver color */
-    text-shadow: 
-        0 0 2px rgba(0,0,0,0.3), /* Outer shadow */
-        0 0 4px rgba(255,255,255,0.5); /* Inner glow for metallic effect */
-    filter: drop-shadow(0 0 2px rgba(255,255,255,0.7)); /* Additional shine */
-}
-
-.heart-icon {
-    position: absolute;
-    font-size: 0.8em;
-    color: white; /* Changed to white */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 0 0 1px rgba(0,0,0,0.5); /* Changed to dark shadow for better visibility */
-}
-
-/* Make sure the icon inherits the primary color in header */
-.navbar-brand .icon-container .shield-icon {
-    color: var(--primary-blue);
-}
-
-.navbar-brand .icon-container .heart-icon {
-    color: white;
-}
-
-/* Make sure the icon is white in footer */
-.footer .icon-container .shield-icon {
-    color: var(--primary-light);
-}
-
-.footer .icon-container .heart-icon {
-    color: white;
-}
-
 /* Header & Navigation */
 .navbar-brand {
     font-size: 1.5rem;
@@ -351,21 +304,6 @@ body {
     
     .footer {
         padding: 0.5rem 0; /* Further reduced for mobile */
-    }
-
-    /* Adjust icon size for mobile */
-    .icon-container {
-        width: 1.25em;
-        height: 1.25em;
-        margin-right: 6px;
-    }
-
-    .shield-icon {
-        font-size: 1.25em;
-    }
-
-    .heart-icon {
-        font-size: 0.7em;
     }
 }
 

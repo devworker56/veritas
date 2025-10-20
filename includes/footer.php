@@ -5,10 +5,12 @@
     <div class="container">
         <div class="row g-3"> <!-- Reduced from g-4 to g-3 -->
             <div class="col-lg-4">
-                <h5 class="mb-2"> <!-- Reduced from mb-3 to mb-2 -->
-                    <i class="fas fa-shield-alt me-2"></i>
-                    AidVeritas
-                </h5>
+             <h5 class="mb-2">
+              <span class="icon-container">
+              <i class="fas fa-shield shield-icon"></i>
+              <i class="fas fa-hand-holding-heart heart-icon"></i>
+              </span>AidVeritas
+            </h5>
                 <p class="text-muted small"> <!-- Added small class -->
                     <?php echo $current_language === 'fr' ? 'Transformez votre monnaie en dons vérifiables. Reçus fiscaux consolidés pour chaque donateur.' : 'Transform your change into verifiable donations. Consolidated tax receipts for every donor.'; ?>
                 </p>
