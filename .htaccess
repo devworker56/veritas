@@ -1,0 +1,19 @@
+# AidVeritas .htaccess - Basic Version
+RewriteEngine On
+
+# Allow access to PHP files directly
+<Files "*.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+# Remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Basic security - comment out if still having issues
+# <FilesMatch "\.(env|json|config.js|md|gitignore|lock)$">
+#     Order allow,deny
+#     Deny from all
+# </FilesMatch>
