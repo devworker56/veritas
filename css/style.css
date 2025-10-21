@@ -49,30 +49,15 @@ body {
 .heart-icon {
     position: absolute;
     font-size: 0.8em;
-    color: white; /* Changed to white */
+    color: white; /* White color */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 0 0 1px rgba(0,0,0,0.5); /* Changed to dark shadow for better visibility */
+    text-shadow: 0 0 1px rgba(0,0,0,0.5); /* Dark shadow for better visibility */
 }
 
-/* Header specific styles */
-.navbar-brand .icon-container .shield-icon {
-    color: var(--primary-blue);
-}
-
-.navbar-brand .icon-container .heart-icon {
-    color: white;
-}
-
-/* Footer specific styles */
-.footer .icon-container .shield-icon {
-    color: var(--primary-light);
-}
-
-.footer .icon-container .heart-icon {
-    color: white;
-}
+/* Remove the header and footer specific color overrides to keep original silver/white colors */
+/* The icon will now use the original silver shield and white heart in both header and footer */
 
 /* Header & Navigation */
 .navbar-brand {
