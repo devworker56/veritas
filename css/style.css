@@ -27,7 +27,7 @@ body {
     background-color: #ffffff;
 }
 
-/* Icon container styles for heart and hand inside shield - EXACT COPY from MDVA */
+/* Icon container styles for heart and hand inside shield - DARKER SILVER */
 .icon-container {
     display: inline-block;
     position: relative;
@@ -39,25 +39,22 @@ body {
 .shield-icon {
     position: absolute;
     font-size: 1.5em;
-    color: #c0c0c0; /* Silver color */
+    color: #a0a0a0; /* Darker silver color */
     text-shadow: 
-        0 0 2px rgba(0,0,0,0.3), /* Outer shadow */
-        0 0 4px rgba(255,255,255,0.5); /* Inner glow for metallic effect */
-    filter: drop-shadow(0 0 2px rgba(255,255,255,0.7)); /* Additional shine */
+        0 0 2px rgba(0,0,0,0.4), /* Darker outer shadow */
+        0 0 4px rgba(255,255,255,0.3); /* Softer inner glow */
+    filter: drop-shadow(0 0 2px rgba(255,255,255,0.5)); /* Additional shine */
 }
 
 .heart-icon {
     position: absolute;
     font-size: 0.8em;
-    color: white; /* White color */
+    color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 0 0 1px rgba(0,0,0,0.5); /* Dark shadow for better visibility */
+    text-shadow: 0 0 2px rgba(0,0,0,0.6); /* Darker shadow for better contrast */
 }
-
-/* Remove the header and footer specific color overrides to keep original silver/white colors */
-/* The icon will now use the original silver shield and white heart in both header and footer */
 
 /* Header & Navigation */
 .navbar-brand {
